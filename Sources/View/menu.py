@@ -75,6 +75,7 @@ class Menu:
         while True:
             self.show()
             try:
+                print(">", end = "")
                 key = int(input())
                 if key == 0:
                     if self.active.prev is None:
